@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <string.h>
+#define MAX_LEN 100
+#include <ctype.h>
+#include <stdbool.h>
+#include <stdlib.h>
+#include <time.h>
+
+char* Ran(char *arr);
+char* RUin(char TheOne,char *arr);
+
+int main(int argc,int **argv) {
+    char arr[MAX_LEN];
+    Ran(arr);
+
+    char TheOne;
+    printf("%s\n",arr);
+    scanf("%c",&TheOne);
+    char *s=RUin(TheOne,arr);
+    printf("%s\n",s);
+}
+
+char* Ran(char *arr) {
+    char *temp=arr;
+    int min='A';
+    int max='Z';
+    srand(time((NULL)));
+    for (int i=0;i<MAX_LEN;i++) {
+        arr[i]=min + rand() % (max - min + 1);
+    }
+    return temp;
+}
+
+char* RUin(char TheOne,char *arr) {
+    char *temp=arr;
+    char *p=arr;
+    while (*p != '\0') {
+        if (*p == TheOne) {
+            // Found the character, remove it by shifting remaining characters
+            char *q = p;
+            while (*q != '\0') {
+                *q = *(q + 1);
+                q++;
+            }
+        } else {
+            p++;
+        }
+    }
+    return temp;
+}

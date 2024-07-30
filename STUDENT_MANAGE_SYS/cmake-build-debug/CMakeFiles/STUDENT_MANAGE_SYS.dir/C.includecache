@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/tmp/tmp.ynrfgR0OsY/STUDENT_MANAGE_SYS.h
+stdio.h
+-
+string.h
+-
+ctype.h
+-
+inttypes.h
+-
+stdbool.h
+-
+stdlib.h
+-
+time.h
+-
+
+/tmp/tmp.ynrfgR0OsY/add_student.c
+add_student.h
+/tmp/tmp.ynrfgR0OsY/add_student.h
+
+/tmp/tmp.ynrfgR0OsY/add_student.h
+stdio.h
+-
+string.h
+-
+
+/tmp/tmp.ynrfgR0OsY/main.c
+STUDENT_MANAGE_SYS.h
+/tmp/tmp.ynrfgR0OsY/STUDENT_MANAGE_SYS.h
+
+/tmp/tmp.ynrfgR0OsY/menu.c
+stdio.h
+-
+

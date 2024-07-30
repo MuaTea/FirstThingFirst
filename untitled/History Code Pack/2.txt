@@ -1,0 +1,27 @@
+#include <errno.h>
+    #include <stdio.h>
+#include <stdlib.h>
+
+//
+// Created by MuaTea on 2024/7/11.
+//
+int main(void) {
+    int a;
+    printf("Plz Enter A Number:.. \n");
+    scanf("%d",&a);
+    if(a>80) {
+        if (a>90) {
+            printf("%d\n",a);
+        }
+        else (
+            printf("%d\n",a));
+    }
+        else {
+            if(a>70) {
+                printf("%d\n",a);
+            }
+            else (
+                printf("%d\n",a));
+        return 0;
+    }
+}

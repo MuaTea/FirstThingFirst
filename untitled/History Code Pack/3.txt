@@ -1,0 +1,15 @@
+int main(void) {
+    int year;
+    printf("Plz Enter The Year:..");
+    scanf("%d",&year);
+    if(year%4==0 && year%100!=0) {
+        printf("%d Is RunNian.");
+    }
+    else if(year%400==0) {
+        printf("%d Is RunNian.");
+    }
+    else {
+        printf("%d Is Not RunNian");
+    }
+    return 0;
+}

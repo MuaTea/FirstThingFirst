@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <string.h>
+#define MAX_LEN 100
+#include <ctype.h>
+#include <stdlib.h>
+#include <time.h>
+
+void Cal(int arr[][3],int rows);
+int Ran(const int MIN,const int MAX);
+void Assignment(int rows);
+int arr[MAX_LEN][3];
+
+int main(/*int argc,char* argv[]*/) {
+    int rows;
+    scanf("%d",&rows);
+    Ran(1,100);
+    Assignment(rows);
+    Cal(arr,rows);
+    return 0;
+}
+
+void Cal(int arr[][3],int rows) {
+    int res=0;
+    for (int i=0;i<rows;i++) {
+        for(int j=0;j<3;j++) {
+            res += arr[i][j];
+        }
+    }
+    printf("%d",res);
+}
+
+int Ran(const int MIN,const int MAX) {
+    srand(time(NULL));
+    int ran=rand()%(MAX-MIN+1);
+    return ran;
+}
+
+void Assignment(int rows) {
+    for (int i=0;i<rows;i++) {
+        for(int j=0;j<3;j++) {
+            arr[i][j]=Ran(1,100);
+        }
+    }
+}

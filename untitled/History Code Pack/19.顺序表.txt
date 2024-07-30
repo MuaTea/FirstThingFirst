@@ -1,0 +1,126 @@
+#include <stdio.h>
+#include <string.h>
+#define MAX_LEN 100
+#include <ctype.h>
+#include <inttypes.h>
+#include <stdbool.h>
+#include <stdlib.h>
+#include <time.h>
+#define SIZE 100
+
+// #include "../../../Program Files/JetBrains/CLion 2024.1.4/bin/mingw/x86_64-w64-mingw32/include/float.h"
+
+ struct Student {
+     int no;
+     char name[20];
+ };
+
+ struct sqlist {
+     struct Student stus [SIZE];
+     int len;
+ };
+
+//初始化
+#if 0
+struct sqlist* init_sqlist() {
+    struct sqlist *p=(struct sqlist*)malloc(sizeof(struct sqlist));
+    if(p==NULL){
+        perror("malloc");
+        exit(0);
+    }return p;
+}
+#else
+void init_sqlist(struct sqlist **q) {
+     *q=(struct sqlist*)malloc(sizeof(struct sqlist));
+     //printf("%lu",sizeof(struct sqlist));
+     if(*q==NULL) {
+         perror("malloc");
+         exit(0);
+     }
+ }
+#endif
+
+bool is_empty(struct sqlist *p) {
+    if(p->len==-1)
+        return true;
+    else
+        return false;
+}
+
+bool is_full(struct sqlist *p) {
+    if(p->len==SIZE-1)
+        return true;
+    else
+        return false;
+}
+
+void show(struct sqlist *p) {
+    if (is_empty(p)) {
+        printf("EMPTY");
+        return;
+    }
+    int i;
+    for (i=0;i<p->len;p++) {
+        printf("%d%s\n",p->stus[i].no,p->stus[i].name);
+    }
+}
+
+
+ void insert(struct sqlist *p,int index,struct Student data) {
+     if (is_full(p)) {
+         printf("FULL");
+         return;
+     }
+     if(index<0||index>p->len+1) {
+         printf("Not Right");
+         return;
+     }
+     int i;
+     for(i=p->len+1;i>index;i--) {
+         p->stus[i]=p->stus[i-1];
+     }
+     p->stus[index]=data;
+     p->len++;
+ }
+
+void delete(struct sqlist* p,int index){
+    if(is_empty(p)) {
+        printf("EMPTY");
+        return;
+}
+    if (index<0||index>p->len+1) {
+        printf("Not Right");
+        return;
+    }
+
+    int i;
+    for (i=index;i<p->len;i++) {
+        p->stus[i]=p->stus[i-1];
+    }
+    p->len++;
+}
+
+ int main(){
+     struct sqlist *p=NULL;
+     init_sqlist(&p);
+     int i=0;
+    while (1) {
+        struct Student data;
+        printf("输入信息:");
+        scanf("%d %s",&data.no,data.name);
+        insert(p,i,data);
+        show(p);
+        if(is_full(p))
+            break;
+    }
+    while(1){
+
+        delete(p,i);
+        show(p);
+        if(is_empty(p))
+            break;
+    }
+     return 0;
+ }
+
+

@@ -1,0 +1,3 @@
+D:/Code/C/STUDENT_MANAGE_SYS/cmake-build-debug/CMakeFiles/STUDENT_MANAGE_SYS.dir
+D:/Code/C/STUDENT_MANAGE_SYS/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Code/C/STUDENT_MANAGE_SYS/cmake-build-debug/CMakeFiles/rebuild_cache.dir

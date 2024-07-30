@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/btree_stack_queue.dir/main.c.o  -o btree_stack_queue 

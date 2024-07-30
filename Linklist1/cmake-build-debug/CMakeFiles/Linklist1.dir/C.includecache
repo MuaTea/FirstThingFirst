@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/tmp/tmp.tpVRaAJrsS/main.c
+stdio.h
+-
+string.h
+-
+student.h
+/tmp/tmp.tpVRaAJrsS/student.h
+
+/tmp/tmp.tpVRaAJrsS/student.c
+student.h
+/tmp/tmp.tpVRaAJrsS/student.h
+
+/tmp/tmp.tpVRaAJrsS/student.h
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+

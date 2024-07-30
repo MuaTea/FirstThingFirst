@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int arr[101]; // 数组大小改为101，存储100到200之间的整数
+    int i = 0;
+    int num2 = 99; // 初始化为99，因为循环开始前会先执行 num2++
+
+    while (++num2 <= 200) {
+        int is_prime = 1;
+        for (int a = 2; a < num2; a++) {
+            if (num2 % a == 0) {
+                is_prime = 0;
+                break;
+            }
+        }
+        if (is_prime) {
+            arr[i++] = num2; // 将素数存入数组并递增索引 i
+        }
+    }
+
+    printf("100到200之间的素数为：\n");
+    for (int j = 0; j < i; j++) {
+        printf("%d ", arr[j]);
+    }
+    printf("\n");
+
+    return 0;
+}

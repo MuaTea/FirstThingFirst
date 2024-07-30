@@ -1,0 +1,3 @@
+/home/hoostar/cmake-build-debug-/CMakeFiles/rebuild_cache.dir
+/home/hoostar/cmake-build-debug-/CMakeFiles/edit_cache.dir
+/home/hoostar/cmake-build-debug-/CMakeFiles/STUDENT_MANAGE_SYS.dir

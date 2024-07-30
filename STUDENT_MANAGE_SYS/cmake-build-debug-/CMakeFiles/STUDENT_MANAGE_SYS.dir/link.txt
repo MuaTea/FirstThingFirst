@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/STUDENT_MANAGE_SYS.dir/main.c.o CMakeFiles/STUDENT_MANAGE_SYS.dir/menu.c.o CMakeFiles/STUDENT_MANAGE_SYS.dir/add_student.c.o  -o STUDENT_MANAGE_SYS 

@@ -1,0 +1,3 @@
+D:/Code/C/kernel_link/cmake-build-debug-mingw/CMakeFiles/kernel_link.dir
+D:/Code/C/kernel_link/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
+D:/Code/C/kernel_link/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+#define MAX_LEN 100
+#include <ctype.h>
+#include <stdlib.h>
+#include <time.h>
+
+char str[MAX_LEN];
+char LowStr[MAX_LEN];
+char Upstr[MAX_LEN];
+
+void CountLowCharacter(int n,char str[]);
+
+int main(int argc,char *argv[]) {
+    int n;
+    scanf("%d",&n);
+    scanf("%s",str);
+    printf("%d",argc);
+    CountLowCharacter(n,str);
+    return 0;
+}
+
+void CountLowCharacter(int n,char str[]) {
+    for (int i=0;i<n;i++) {
+        if (str[i]>='a'&&str[i]<='z') {
+            LowStr[i]=str[i];
+        }
+    }
+    for(int i=0;i<n;i++) {
+        Upstr[i]=toupper(LowStr[i]);
+        printf("%c",Upstr[i]);
+    }
+}

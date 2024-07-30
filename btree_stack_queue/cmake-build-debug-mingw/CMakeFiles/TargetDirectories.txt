@@ -1,0 +1,3 @@
+D:/Code/C/btree_stack_queue/cmake-build-debug-mingw/CMakeFiles/btree_stack_queue.dir
+D:/Code/C/btree_stack_queue/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
+D:/Code/C/btree_stack_queue/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir

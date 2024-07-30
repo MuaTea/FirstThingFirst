@@ -1,0 +1,26 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+	int arr[3][4];
+	int i;
+	int min=1;
+	int max=100;
+	int randomNumber;
+	int j;
+	srand(time(NULL));
+	for(i=0;i<3;i++) {
+
+
+
+		for(j=0;j<4;j++){
+			randomNumber=min+rand()%(max-min+1);
+			arr[i][j]=randomNumber;
+			printf("%d ",arr[i][j]);
+		}
+	}
+		return 0;
+
+}

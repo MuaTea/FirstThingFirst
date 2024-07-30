@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/tmp/tmp.9Iiks0AUeC/fileio.h
+student.h
+/tmp/tmp.9Iiks0AUeC/student.h
+
+/tmp/tmp.9Iiks0AUeC/main.c
+iso646.h
+-
+student.h
+/tmp/tmp.9Iiks0AUeC/student.h
+fileio.h
+/tmp/tmp.9Iiks0AUeC/fileio.h
+
+/tmp/tmp.9Iiks0AUeC/student.h
+stdio.h
+-
+stdlib.h
+-
+

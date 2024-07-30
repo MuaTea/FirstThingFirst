@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/tmp/tmp.Bvx6ve7J4d/kernel_link.c
+kernel_link.h
+/tmp/tmp.Bvx6ve7J4d/kernel_link.h
+
+/tmp/tmp.Bvx6ve7J4d/kernel_link.h
+
+/tmp/tmp.Bvx6ve7J4d/main.c
+stdio.h
+-
+

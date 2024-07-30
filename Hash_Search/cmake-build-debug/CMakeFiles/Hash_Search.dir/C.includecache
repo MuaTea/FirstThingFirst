@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/tmp/tmp.Ak04BTQDvE/Hash.c
+Hash.h
+/tmp/tmp.Ak04BTQDvE/Hash.h
+
+/tmp/tmp.Ak04BTQDvE/Hash.h
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+stdbool.h
+-
+math.h
+-
+
+/tmp/tmp.Ak04BTQDvE/main.c
+Hash.h
+/tmp/tmp.Ak04BTQDvE/Hash.h
+

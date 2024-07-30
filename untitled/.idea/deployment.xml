@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="ubantu" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="ubantu">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/tmp.dEAheCuP9x" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="ubantu (487f589f-6402-40b2-966d-ee3b92ab1b74)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/tmp.CvSmAWI72G" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-mingw" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-mingw" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="远程主机 (371e15bd-3ee6-463e-b82c-2a8f5895b33e)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/tmp.3oUc4nhQ5Z" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

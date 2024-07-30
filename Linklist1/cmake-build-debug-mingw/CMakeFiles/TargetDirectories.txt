@@ -1,0 +1,3 @@
+D:/Code/C/Linklist1/cmake-build-debug-mingw/CMakeFiles/Linklist1.dir
+D:/Code/C/Linklist1/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
+D:/Code/C/Linklist1/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir

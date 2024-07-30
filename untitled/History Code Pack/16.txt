@@ -1,0 +1,69 @@
+#include <stdio.h>
+#include <string.h>
+#define MAX_LEN 100
+#include <ctype.h>
+#include <stdlib.h>
+#include <time.h>
+
+// char* mystrcpy(char *dest,const char* src) {
+//     char* temp=dest;
+//     while (*dest++ = *src++);
+//     return temp;
+// }
+//
+// int main() {
+//     char dest[100]="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n";
+//     char src[]="world";
+//
+//     char * s =mystrcpy(dest,src);
+//     printf("%s\n",s);
+//
+//     return 0;
+// }
+
+
+
+
+
+void Sort(int arr[][3],int rows);
+int Ran(const int MIN,const int MAX);
+int* Assignment(int rows);
+int arr[MAX_LEN][3];
+
+int main(/*int argc,char* argv[]*/) {
+    int rows;
+    scanf("%d",&rows);
+    Ran(1,100);
+    Assignment(rows);
+    Sort(arr,rows);
+    return 0;
+}
+
+void Sort(int arr[][3],int rows) {
+    int* a =Assignment(rows);
+    int res=0;
+    //int* temp=&res;
+    for (int i=0;i<rows;i++) {
+        for(int j=0;j<3;j++) {
+            res += *a;
+        }
+    }
+    //return temp;
+    //printf("%d",*temp);
+}
+
+int Ran(const int MIN,const int MAX) {
+    srand(time(NULL));
+    int ran=rand()%(MAX-MIN+1);
+    return ran;
+}
+
+int* Assignment(int rows) {
+    int* temp=arr;
+    for (int i=0;i<rows;i++) {
+        for(int j=0;j<3;j++) {
+            arr[i][j]=Ran(1,100);
+        }
+    }
+    return temp;
+}

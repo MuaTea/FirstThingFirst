@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <string.h>
+#define MAX_LEN 100
+#include <ctype.h>
+#include <stdbool.h>
+#include <stdlib.h>
+#include <time.h>
+
+char* Ran(char *arr);
+// char* RUin(char TheOne,char *arr);
+void CountCh(const char *arr);
+
+int main(int argc,int **argv) {
+    //fgets(input, sizeof(input), stdin);
+    //countCharacters(input);
+    char arr[MAX_LEN];
+    Ran(arr);
+    CountCh(arr);
+    return 0;
+}
+
+char* Ran(char *arr) {
+    char *temp=arr;
+    int min='A';
+    int max='Z';
+    srand(time((NULL)));
+    for (int i=0;i<MAX_LEN;i++) {
+        arr[i]=min + rand() % (max - min + 1);
+    }
+    return temp;
+}
+
+void CountCh(const char *arr) {
+    int counts[26]={0};
+
+    while (*arr != '\0') {
+        char ch = *arr;
+        if (isalpha(ch)) {
+            ch=tolower(ch);
+            counts[ch-'a']++;
+        }
+        arr++;
+    }
+    for (int i=0;i<26;i++) {
+        printf("%c:%d\n",'a'+i,counts[i]);
+    }
+}

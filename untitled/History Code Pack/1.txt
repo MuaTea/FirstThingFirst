@@ -1,0 +1,21 @@
+#include <errno.h>
+    #include <stdio.h>
+#include <stdlib.h>
+
+//
+// Created by MuaTea on 2024/7/11.
+//
+int main(void){
+    int age;
+    printf("Plz Enter Your Age:.. \n");
+    scanf("%d",&age);
+    int age_almost=age/10;
+    switch(age_almost) {
+        case 6:printf("Old fool!");break;
+        case 4:printf("Stupid fool!");break;
+        case 2:printf("Good,Good");break;
+        case 1:printf("My Favourite!YummyYummy!");break;
+        default:printf("Whatever,I Dont Give A Shit..");
+    }
+    return 0;
+}

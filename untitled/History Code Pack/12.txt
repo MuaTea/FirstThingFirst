@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#define MAX_LEN 100
+#include <stdbool.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(void) {
+    char str[][100]={{"red"},{"bule"},{"yellow"}};
+    int i;
+    char temp[MAX_LEN];
+
+    char (*ptr)[100]=str;
+
+    for(i=0;i<3;i++) {
+        for(int j=i+1;j<3;j++) {
+            if (strcmp(*(ptr+i),*(ptr+j))>0) {
+                strcpy(temp,*(ptr+i));
+                strcpy(*(ptr+i),*(ptr+j));
+                strcpy(*(ptr+j),temp);
+            }
+        }
+    }
+    for(i=0;i<3;i++) {
+        printf("%s\n",*(ptr+i));
+    }
+    return 0;
+}

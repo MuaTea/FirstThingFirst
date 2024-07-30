@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hoostar/STUDENT_MANAGE_SYS.h
+stdio.h
+-
+string.h
+-
+ctype.h
+-
+inttypes.h
+-
+stdbool.h
+-
+stdlib.h
+-
+time.h
+-
+
+/home/hoostar/add_student.c
+add_student.h
+/home/hoostar/add_student.h
+
+/home/hoostar/add_student.h
+stdio.h
+-
+string.h
+-
+
+/home/hoostar/main.c
+STUDENT_MANAGE_SYS.h
+/home/hoostar/STUDENT_MANAGE_SYS.h
+
+/home/hoostar/menu.c
+stdio.h
+-
+

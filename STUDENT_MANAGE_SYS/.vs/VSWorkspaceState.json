@@ -1,0 +1,20 @@
+{
+  "DevContainersInfoBarHidden": true,
+  "OutputFoldersPerTargetSystem": {
+    "本地计算机": [
+      "out\\build\\x64-Debug",
+      "out\\install\\x64-Debug"
+    ],
+    "192.168.159.128": [
+      "out\\build\\x64-Debug",
+      "out\\install\\x64-Debug"
+    ]
+  },
+  "ActiveTargetSystem": "本地计算机",
+  "ExpandedNodes": [
+    "",
+    "\\cmake-build-debug"
+  ],
+  "SelectedNode": "\\main.c",
+  "PreviewInSolutionExplorer": false
+}

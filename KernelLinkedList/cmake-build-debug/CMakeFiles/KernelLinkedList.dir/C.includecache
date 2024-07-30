@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/tmp/tmp.dkHywKss9M/MethodBody.c
+MethodBody.h
+/tmp/tmp.dkHywKss9M/MethodBody.h
+
+/tmp/tmp.dkHywKss9M/MethodBody.h
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+list.h
+/tmp/tmp.dkHywKss9M/list.h
+
+/tmp/tmp.dkHywKss9M/list.h
+
+/tmp/tmp.dkHywKss9M/main.c
+MethodBody.h
+/tmp/tmp.dkHywKss9M/MethodBody.h
+

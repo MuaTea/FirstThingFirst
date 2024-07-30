@@ -1,0 +1,6 @@
+# ninja log v6
+1	144	7435271970947055	CMakeFiles/kernel_link.dir/main.c.obj	983ab4b2b0130154
+149	250	7435271972312028	kernel_link.exe	e19973356a5c7a9e
+29	149	7435271971117047	CMakeFiles/kernel_link.dir/kernel_link.c.obj	45904c2f1294bcf2
+4	175	7435283011926200	CMakeFiles/kernel_link.dir/main.c.obj	983ab4b2b0130154
+176	318	7435283013646614	kernel_link.exe	e19973356a5c7a9e
