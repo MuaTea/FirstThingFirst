@@ -1,0 +1,3 @@
+/home/muatea/CLionProjects/mutex/cmake-build-debug/CMakeFiles/mutex.dir
+/home/muatea/CLionProjects/mutex/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/muatea/CLionProjects/mutex/cmake-build-debug/CMakeFiles/rebuild_cache.dir

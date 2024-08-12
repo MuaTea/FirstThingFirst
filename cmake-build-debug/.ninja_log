@@ -1,0 +1,9 @@
+# ninja log v6
+0	63	1723468672121760074	CMakeFiles/mutex.dir/sem.c.o	6910e067de84f0ee
+1	85	1723468672122760061	CMakeFiles/mutex.dir/shm_write_sem.c.o	3edb70aafb721d1d
+1	85	1723468672122760061	CMakeFiles/mutex.dir/shm_read_sem.c.o	f896f846a5a3e60e
+1	18	1723468800497235204	mutex	dda44fcb3dc29a7f
+1	30	1723468961055539510	CMakeFiles/mutex.dir/shm_write_sem.c.o	3edb70aafb721d1d
+30	46	1723468961084539222	mutex	dda44fcb3dc29a7f
+1	28	1723469393993715346	CMakeFiles/mutex.dir/shm_write_sem.c.o	3edb70aafb721d1d
+29	44	1723469394021715122	mutex	dda44fcb3dc29a7f
